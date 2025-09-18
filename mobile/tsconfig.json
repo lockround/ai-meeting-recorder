@@ -1,6 +1,11 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "jsx": "react-native",
+    "target": "ES2017",
+    "lib": ["ES2017", "DOM"],
+    "moduleResolution": "node",
+    "skipLibCheck": true
   }
 }

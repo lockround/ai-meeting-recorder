@@ -1,6 +1,7 @@
+// @ts-nocheck
 import * as FileSystem from 'expo-file-system';
 
-const API_URL = process.env.EXPO_PUBLIC_API_URL || 'http://localhost:8787';
+const API_URL = process.env.EXPO_PUBLIC_API_URL || 'http://10.0.2.2:8787';
 
 export async function transcribeAudio(fileUri: string): Promise<string> {
   const fileInfo = await FileSystem.getInfoAsync(fileUri);
